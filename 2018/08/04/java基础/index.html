@@ -86,13 +86,13 @@
 <meta property="og:site_name" content="prilemon的个人博客">
 <meta property="og:description" content="title: java 基础[TOC] this 关键字 在类的方法定义中使用的 this 的关键字代表使用该方法的对象的引用；  当必须指出当前使用的方法的对象是谁时要使用 this；  使用 this 可以处理方法中成员变量和参数重名的情况；  this 可以看作是一个变量，它的值是当前对象的引用（还是存储在堆内存）。    static关键字 在类中，用 static 声明的成员变量为静态">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="e:/java学习/images/this内存分配.png">
-<meta property="og:image" content="e:/java学习/images/static内存.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/04/java基础/E:/java学习/images/this内存分配.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/04/java基础/E:/java学习/images/static内存.png">
 <meta property="og:updated_time" content="2018-08-03T17:29:13.825Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="prilemon的个人博客">
 <meta name="twitter:description" content="title: java 基础[TOC] this 关键字 在类的方法定义中使用的 this 的关键字代表使用该方法的对象的引用；  当必须指出当前使用的方法的对象是谁时要使用 this；  使用 this 可以处理方法中成员变量和参数重名的情况；  this 可以看作是一个变量，它的值是当前对象的引用（还是存储在堆内存）。    static关键字 在类中，用 static 声明的成员变量为静态">
-<meta name="twitter:image" content="e:/java学习/images/this内存分配.png">
+<meta name="twitter:image" content="http://yoursite.com/2018/08/04/java基础/E:/java学习/images/this内存分配.png">
 
 
 
@@ -342,7 +342,7 @@
 <li><p>使用 this 可以处理方法中成员变量和参数重名的情况；</p>
 </li>
 <li><p>this 可以看作是一个变量，它的值是当前对象的引用（还是存储在堆内存）。</p>
-<p><img src="E:\java学习\images\this内存分配.png" alt="this内存分配"></p>
+<p><img src="/2018/08/04/java基础/E:/java学习\images\this内存分配.png" alt="this内存分配"></p>
 </li>
 </ol>
 <h4 id="static关键字"><a href="#static关键字" class="headerlink" title="static关键字"></a>static关键字</h4><ol>
@@ -355,7 +355,7 @@
 </li>
 <li><p>可以通过对象引用或类名（不需要实例化）访问静态成员。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Cat</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> sid = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">int</span> id;</span><br><span class="line">    Cat(String name)&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">        id = sid++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">info</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"My name is "</span>+ name+<span class="string">" No."</span>+id);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        Cat.sid = <span class="number">100</span>;</span><br><span class="line">        Cat mimi = <span class="keyword">new</span> Cat(<span class="string">"mimi"</span>);</span><br><span class="line">        Cat pipi = <span class="keyword">new</span> Cat(<span class="string">"pipi"</span>);</span><br><span class="line">        mimi.info();</span><br><span class="line">        pipi.info();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="E:\java学习\images\static内存.png" alt="static内存"></p>
+<p><img src="/2018/08/04/java基础/E:/java学习\images\static内存.png" alt="static内存"></p>
 </li>
 </ol>
 
@@ -391,6 +391,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/04/spring学习/" rel="prev" title="spring学习">
+                spring学习 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -467,7 +471,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
